@@ -23,4 +23,4 @@ def gcd_game():
             print('Let\'s play again')
             break
     if corrects == 3:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
