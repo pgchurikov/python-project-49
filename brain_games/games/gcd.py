@@ -2,6 +2,7 @@ import random
 import prompt
 import math
 
+
 def gcd_game():
     print('brain-gcd\n')
     print('Welcome to the Brain Games!')
