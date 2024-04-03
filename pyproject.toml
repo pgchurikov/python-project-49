@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Five brain games"
 authors = ["Pavel Churikov <p.g.churikov@gmail.com>"]
 readme = "README.md"
 packages = [
