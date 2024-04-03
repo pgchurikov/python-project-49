@@ -20,7 +20,7 @@ def gcd_game():
             corrects += 1
         else:
             print(f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{answer}\'')
-            print('Let\'s play again')
+            print(f'Let\'s play again, {name}!')
             break
     if corrects == 3:
         print(f'Congratulations, {name}!')
