@@ -13,7 +13,7 @@ def gcd_game():
     while corrects < 3:
         a = random.randint(1, 100)
         b = random.randint(1, 100)
-        print(f'Question: {a}, {b}')
+        print(f'Question: {a} {b}')
         answer = math.gcd(a, b)
         user_answer = int(input('Your answer: '))
         if user_answer == answer:
