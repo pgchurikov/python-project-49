@@ -20,6 +20,7 @@ def progression_game():
         answer = list[index]
         list[index] = '..'
         question = ' '.join(map(str, list))
+        question = question.strip()
         print(f'Question:  {question}')
         user_answer = int(input('Your answer '))
         if user_answer == answer:
