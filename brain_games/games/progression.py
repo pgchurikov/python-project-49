@@ -32,6 +32,3 @@ def progression_game():
             break
     if corrects == 3:
         print(f'Congratulations, {name}!')
-
-
-progression_game()
