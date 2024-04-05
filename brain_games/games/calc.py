@@ -14,12 +14,13 @@ def calc_game():
         b = random.randint(1, 100)
         operator_list = ['+', '-', '*']
         operator = random.choice(operator_list)
-        if operator == '+':
-            answer = a + b
-        elif operator == '-':
-            answer = a - b
-        else:
-            answer = a * b
+        match operator:
+            case '+':
+                answer = a + b
+            case '-':
+                answer = a - b
+            case _:
+                answer = a * b
         print(f'Question: {a} {operator} {b} = ..')
         user_answer = float(input('Your answer '))
         if user_answer == answer:

@@ -7,7 +7,7 @@ def progression_game():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
-    print('What number is missing in the progression?s')
+    print('What number is missing in the progression?')
     corrects = 0
     while corrects < 3:
         a = random.randint(1, 10)
@@ -19,7 +19,8 @@ def progression_game():
             a += b
         answer = list[index]
         list[index] = '..'
-        print(f'Question:  {list}')
+        question = ' '.join(map(str, list))
+        print(f'Question:  {question}')
         user_answer = int(input('Your answer '))
         if user_answer == answer:
             print('Correct!')
@@ -31,3 +32,6 @@ def progression_game():
             break
     if corrects == 3:
         print(f'Congratulations, {name}!')
+
+
+progression_game()
