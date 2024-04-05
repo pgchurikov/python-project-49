@@ -12,9 +12,10 @@ def progression_game():
     while corrects < 3:
         a = random.randint(1, 10)
         b = random.randint(1, 10)
-        index = random.randint(0, 9)
+        lenght = random.randint(5, 10)
+        index = random.randint(0, lenght - 1)
         list = []
-        for _ in range(1, 11):
+        for _ in range(lenght):
             list.append(a)
             a += b
         answer = list[index]
