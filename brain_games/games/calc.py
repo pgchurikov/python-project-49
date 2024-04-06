@@ -8,7 +8,7 @@ from brain_games.constant import WRONG
 def calc_game():
     print('brain-calc\n')
     print(f'{GREETINGS}')
-    name = prompt('May I have your name? ')
+    name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
     print(GAME_INSTRUCTIONS["calc"])
     corrects = 0

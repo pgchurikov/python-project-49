@@ -23,7 +23,7 @@ def is_prime():
 def prime_game():
     print('brain-prime\n')
     print(f'{GREETINGS}')
-    name = prompt('May I have your name? ')
+    name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
     print(GAME_INSTRUCTIONS["prime"])
     corrects = 0

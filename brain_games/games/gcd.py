@@ -9,7 +9,7 @@ from brain_games.constant import WRONG
 def gcd_game():
     print('brain-gcd\n')
     print(f'{GREETINGS}')
-    name = prompt('May I have your name? ')
+    name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
     print(GAME_INSTRUCTIONS["gcd"])
     corrects = 0
