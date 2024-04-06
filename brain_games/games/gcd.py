@@ -1,14 +1,16 @@
 import random
-import prompt
+from brain_games.cli import welcome_user
 import math
+from brain_games.constant import GREETINGS
+from brain_games.constant import GAME_INSTRUCTIONS
+from brain_games.constant import WRONG
 
 
 def gcd_game():
     print('brain-gcd\n')
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
-    print('Find the greatest common divisor of given numbers.')
+    print(f'{GREETINGS}')
+    name = welcome_user()
+    print(GAME_INSTRUCTIONS["gcd"])
     corrects = 0
     while corrects < 3:
         a = random.randint(1, 100)
@@ -20,7 +22,7 @@ def gcd_game():
             print('Correct!')
             corrects += 1
         else:
-            print(f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{answer}\'')
+            print(f'\'{user_answer}\'{WRONG}\'{answer}\'')
             print(f'Let\'s try again, {name}!')
             break
     if corrects == 3:

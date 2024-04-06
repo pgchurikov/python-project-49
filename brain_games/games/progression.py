@@ -1,13 +1,15 @@
 import random
-import prompt
+from brain_games.cli import welcome_user
+from brain_games.constant import GREETINGS
+from brain_games.constant import GAME_INSTRUCTIONS
+from brain_games.constant import WRONG
 
 
 def progression_game():
     print('brain-progression\n')
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
-    print('What number is missing in the progression?')
+    print(f'{GREETINGS}')
+    name = welcome_user()
+    print(GAME_INSTRUCTIONS["progression"])
     corrects = 0
     while corrects < 3:
         a = random.randint(1, 10)
@@ -29,7 +31,7 @@ def progression_game():
             corrects += 1
             list.clear()
         else:
-            print(f'\'{user_answer}\' is wrong answer ;(. Correct answer was \'{answer}\'')
+            print(f'\'{user_answer}\'{WRONG}\'{answer}\'')
             print(f'Let\'s try again, {name}!')
             break
     if corrects == 3:
