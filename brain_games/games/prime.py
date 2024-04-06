@@ -8,16 +8,17 @@ from brain_games.constant import WRONG
 
 def is_prime():
     a = random.randint(1, 100)
-    return ('yes')
+    print(f'Question: {a}')
+    answer = 'yes'
     if a <= 1:
-        return ('no')
+        answer = 'no'
     i = 2
     while i <= math.sqrt(a):
         if a % i == 0:
-            return ('no')
+            answer = 'no'
             break
         i += 1
-    print(f'Question: {a}')
+    return (answer)
 
 
 def prime_game():
