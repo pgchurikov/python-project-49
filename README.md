@@ -3,9 +3,9 @@
 
 <a href="https://codeclimate.com/github/pgchurikov/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/bd64c5cc50195b932e22/maintainability" /></a>
 
-Minimal requirements: Python 3.10.12, poetry 1.8.2, pip 22.0.2
-Installation: pip install --user brain-games
-Contains five brain games:
+Minimal requirements: Python 3.10.12, poetry 1.8.2, pip 22.0.2 \n
+Installation: pip install --user brain-games \n
+Contains five brain games: \n
 
 brain-calc (What is the result of the expression?)
 <a href="https://asciinema.org/a/CFka1Wgid6ag5ki6DSYvjzucQ" target="_blank"><img src="https://asciinema.org/a/CFka1Wgid6ag5ki6DSYvjzucQ.svg" /></a>
