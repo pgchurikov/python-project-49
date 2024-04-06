@@ -1,5 +1,5 @@
 import random
-from brain_games.cli import welcome_user
+import prompt
 import math
 from brain_games.constant import GREETINGS
 from brain_games.constant import GAME_INSTRUCTIONS
@@ -9,7 +9,8 @@ from brain_games.constant import WRONG
 def gcd_game():
     print('brain-gcd\n')
     print(f'{GREETINGS}')
-    name = welcome_user()
+    name = prompt('May I have your name? ')
+    print(f'Hello, {name}')
     print(GAME_INSTRUCTIONS["gcd"])
     corrects = 0
     while corrects < 3:

@@ -1,6 +1,6 @@
 import random
 import math
-from brain_games.cli import welcome_user
+import prompt
 from brain_games.constant import GREETINGS
 from brain_games.constant import GAME_INSTRUCTIONS
 from brain_games.constant import WRONG
@@ -23,7 +23,8 @@ def is_prime():
 def prime_game():
     print('brain-prime\n')
     print(f'{GREETINGS}')
-    name = welcome_user()
+    name = prompt('May I have your name? ')
+    print(f'Hello, {name}')
     print(GAME_INSTRUCTIONS["prime"])
     corrects = 0
     while corrects < 3:

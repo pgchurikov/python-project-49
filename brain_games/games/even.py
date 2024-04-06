@@ -1,6 +1,5 @@
 import random
 import prompt
-from brain_games.cli import welcome_user
 from brain_games.constant import GREETINGS
 from brain_games.constant import GAME_INSTRUCTIONS
 from brain_games.constant import WRONG
@@ -9,7 +8,8 @@ from brain_games.constant import WRONG
 def even_game():
     print('brain-even\n')
     print(f'{GREETINGS}')
-    name = welcome_user()
+    name = prompt('May I have your name? ')
+    print(f'Hello, {name}')
     print(GAME_INSTRUCTIONS["even"])
     corrects = 0
     while corrects < 3:

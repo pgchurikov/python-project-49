@@ -1,5 +1,5 @@
 import random
-from brain_games.cli import welcome_user
+import prompt
 from brain_games.constant import GREETINGS
 from brain_games.constant import GAME_INSTRUCTIONS
 from brain_games.constant import WRONG
@@ -8,7 +8,8 @@ from brain_games.constant import WRONG
 def calc_game():
     print('brain-calc\n')
     print(f'{GREETINGS}')
-    name = welcome_user()
+    name = prompt('May I have your name? ')
+    print(f'Hello, {name}')
     print(GAME_INSTRUCTIONS["calc"])
     corrects = 0
     while corrects < 3:
