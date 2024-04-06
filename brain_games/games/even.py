@@ -1,4 +1,5 @@
 import random
+import prompt
 from brain_games.cli import welcome_user
 from brain_games.constant import GREETINGS
 from brain_games.constant import GAME_INSTRUCTIONS
