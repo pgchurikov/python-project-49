@@ -3,6 +3,8 @@
 
 <a href="https://codeclimate.com/github/pgchurikov/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/bd64c5cc50195b932e22/maintainability" /></a>
 
+First Hexlet study project: five terminal games. Answer correctly 3 times to win. If you lose, you can try again! <br />
+
 Minimal requirements: Python 3.10.12, poetry 1.8.2, pip 22.0.2 <br />
 Installation: pip install --user brain-games <br />
 Contains five brain games: <br />

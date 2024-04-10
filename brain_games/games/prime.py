@@ -1,14 +1,12 @@
 import random
 import math
-import prompt
-from brain_games.constant import GREETINGS
+from brain_games.core import play_game
 from brain_games.constant import GAME_INSTRUCTIONS
-from brain_games.constant import WRONG
 
 
-def is_prime():
+def prime():
     a = random.randint(1, 100)
-    print(f'Question: {a}')
+    question = f'Question: {a}'
     answer = 'yes'
     if a <= 1:
         answer = 'no'
@@ -18,25 +16,9 @@ def is_prime():
             answer = 'no'
             break
         i += 1
-    return (answer)
+    return answer, question
 
 
 def prime_game():
     print('brain-prime\n')
-    print(f'{GREETINGS}')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
-    print(GAME_INSTRUCTIONS["prime"])
-    corrects = 0
-    while corrects < 3:
-        answer = is_prime()
-        user_answer = input('Your answer ')
-        if user_answer == answer:
-            print('Correct!')
-            corrects += 1
-        else:
-            print(f'\'{user_answer}\'{WRONG}\'{answer}\'')
-            print(f'Let\'s try again, {name}!')
-            break
-        if corrects == 3:
-            print(f'Congratulations, {name}!')
+    play_game(prime, GAME_INSTRUCTIONS["prime"])

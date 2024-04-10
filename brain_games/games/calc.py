@@ -1,37 +1,24 @@
 import random
-import prompt
-from brain_games.constant import GREETINGS
+from brain_games.core import play_game
 from brain_games.constant import GAME_INSTRUCTIONS
-from brain_games.constant import WRONG
+
+
+def calculation():
+    a = random.randint(1, 100)
+    b = random.randint(1, 100)
+    operator_list = ['+', '-', '*']
+    operator = random.choice(operator_list)
+    match operator:
+        case '+':
+            answer = str(a + b)
+        case '-':
+            answer = str(a - b)
+        case _:
+            answer = str(a * b)
+    question = f'Question: {a} {operator} {b} = ..'
+    return answer, question
 
 
 def calc_game():
     print('brain-calc\n')
-    print(f'{GREETINGS}')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
-    print(GAME_INSTRUCTIONS["calc"])
-    corrects = 0
-    while corrects < 3:
-        a = random.randint(1, 100)
-        b = random.randint(1, 100)
-        operator_list = ['+', '-', '*']
-        operator = random.choice(operator_list)
-        match operator:
-            case '+':
-                answer = a + b
-            case '-':
-                answer = a - b
-            case _:
-                answer = a * b
-        print(f'Question: {a} {operator} {b} = ..')
-        user_answer = float(input('Your answer '))
-        if user_answer == answer:
-            print('Correct!')
-            corrects += 1
-        else:
-            print(f'\'{user_answer}\'{WRONG}\'{answer}\'')
-            print(f'Let\'s try again, {name}!')
-            break
-    if corrects == 3:
-        print(f'Congratulations, {name}!')
+    play_game(calculation, GAME_INSTRUCTIONS["calc"])
