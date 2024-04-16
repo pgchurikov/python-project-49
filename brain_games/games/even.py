@@ -1,18 +1,12 @@
 import random
-from brain_games.core import play_game
-from brain_games.constant import GAME_INSTRUCTIONS
 
 
-def even():
-    a = random.randint(1, 100)
-    if a % 2 == 0:
-        answer = 'yes'
-    else:
-        answer = 'no'
-    question = f'Question: {a}'
+def is_even(number):
+    return number % 2 == 0
+
+
+def even_condition():
+    number = random.randint(1, 100)
+    question = f'Question: {number}'
+    answer = 'yes' if is_even(number) else 'no'
     return answer, question
-
-
-def even_game():
-    print('brain-even\n')
-    play_game(even, GAME_INSTRUCTIONS["even"])

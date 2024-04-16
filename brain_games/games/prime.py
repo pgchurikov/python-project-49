@@ -1,24 +1,18 @@
 import random
 import math
-from brain_games.core import play_game
-from brain_games.constant import GAME_INSTRUCTIONS
 
 
-def prime():
-    a = random.randint(1, 100)
-    question = f'Question: {a}'
-    answer = 'yes'
-    if a <= 1:
-        answer = 'no'
-    i = 2
-    while i <= math.sqrt(a):
-        if a % i == 0:
-            answer = 'no'
-            break
-        i += 1
+def is_prime(number):
+    if number <= 1:
+        return False
+    for i in range(2, int(math.sqrt(number))+1):
+        if number % i == 0:
+            return False
+    return True
+
+
+def prime_condition():
+    number = random.randint(1, 100)
+    question = f'Question: {number}'
+    answer = 'yes' if is_prime(number) else 'no'
     return answer, question
-
-
-def prime_game():
-    print('brain-prime\n')
-    play_game(prime, GAME_INSTRUCTIONS["prime"])
