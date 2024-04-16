@@ -10,16 +10,16 @@ Installation: pip install --user brain-games <br />
 Contains five brain games: <br />
 
 brain-calc (What is the result of the expression?)
-<a href="https://asciinema.org/a/CFka1Wgid6ag5ki6DSYvjzucQ" target="_blank"><img src="https://asciinema.org/a/CFka1Wgid6ag5ki6DSYvjzucQ.svg" /></a>
+<a href="https://asciinema.org/a/654533" target="_blank"><img src="https://asciinema.org/a/654533.svg" /></a>
 
 brain-even (Answer "yes" if the number is even, otherwise answer "no".)
-<a href="https://asciinema.org/a/Fqf484Emn9C4rxUYmYfciZ4h1" target="_blank"><img src="https://asciinema.org/a/Fqf484Emn9C4rxUYmYfciZ4h1.svg" /></a>
+<a href="https://asciinema.org/a/654535" target="_blank"><img src="https://asciinema.org/a/654535.svg" /></a>
 
 brain-gcd (Find the greatest common divisor of given numbers.)
-<a href="https://asciinema.org/a/QIaZTUDNLn0xC8kPt4duQsZs9" target="_blank"><img src="https://asciinema.org/a/QIaZTUDNLn0xC8kPt4duQsZs9.svg" /></a>
+<a href="https://asciinema.org/a/654537" target="_blank"><img src="https://asciinema.org/a/654537.svg" /></a>
 
 brain-prime (Answer "yes" if given number is prime. Otherwise answer "no".)
-<a href="https://asciinema.org/a/OvqeWwMW9VkqgMibGbHUwPfHf" target="_blank"><img src="https://asciinema.org/a/OvqeWwMW9VkqgMibGbHUwPfHf.svg" /></a>
+<a href="https://asciinema.org/a/654538" target="_blank"><img src="https://asciinema.org/a/654538.svg" /></a>
 
 brain-progression (What number is missing in the progression?)
-<a href="https://asciinema.org/a/N1zehAX3u7otumO0OL4q86vKZ" target="_blank"><img src="https://asciinema.org/a/N1zehAX3u7otumO0OL4q86vKZ.svg" /></a>
+<a href="https://asciinema.org/a/654539" target="_blank"><img src="https://asciinema.org/a/654539.svg" /></a>
