@@ -1,4 +1,5 @@
 import random
+from brain_games.constant import GAME_INSTRUCTIONS
 
 
 def progression(number, step, lenght):
@@ -9,7 +10,7 @@ def progression(number, step, lenght):
     return list
 
 
-def progression_condition():
+def brain_progression():
     number, step = random.randint(1, 10), random.randint(1, 10)
     lenght = random.randint(5, 10)
     list = progression(number, step, lenght)
@@ -18,4 +19,5 @@ def progression_condition():
     list[index] = '..'
     hidden_progression = ' '.join(map(str, list))
     question = f'Question: {hidden_progression}'
-    return answer, question
+    instruction = GAME_INSTRUCTIONS["progression"]
+    return answer, question, instruction

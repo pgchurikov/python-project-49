@@ -2,13 +2,12 @@
 
 
 from brain_games.core import play_game
-from brain_games.constant import GAME_INSTRUCTIONS
-from brain_games.games.prime import prime_condition
+from brain_games.games.prime import brain_prime
 
 
 def main():
     print('brain-prime\n')
-    play_game(prime_condition, GAME_INSTRUCTIONS["prime"])
+    play_game(brain_prime)
 
 
 if __name__ == '__main__':

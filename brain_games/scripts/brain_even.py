@@ -2,13 +2,12 @@
 
 
 from brain_games.core import play_game
-from brain_games.constant import GAME_INSTRUCTIONS
-from brain_games.games.even import even_condition
+from brain_games.games.even import brain_even
 
 
 def main():
     print('brain-even\n')
-    play_game(even_condition, GAME_INSTRUCTIONS["even"])
+    play_game(brain_even)
 
 
 if __name__ == '__main__':

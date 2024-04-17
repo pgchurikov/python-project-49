@@ -1,5 +1,6 @@
 import random
 import math
+from brain_games.constant import GAME_INSTRUCTIONS
 
 
 def is_prime(number):
@@ -11,8 +12,9 @@ def is_prime(number):
     return True
 
 
-def prime_condition():
+def brain_prime():
     number = random.randint(1, 100)
     question = f'Question: {number}'
     answer = 'yes' if is_prime(number) else 'no'
-    return answer, question
+    instruction = GAME_INSTRUCTIONS["prime"]
+    return answer, question, instruction

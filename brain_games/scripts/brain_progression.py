@@ -2,13 +2,12 @@
 
 
 from brain_games.core import play_game
-from brain_games.constant import GAME_INSTRUCTIONS
-from brain_games.games.progression import progression_condition
+from brain_games.games.progression import brain_progression
 
 
 def main():
     print('brain-progression\n')
-    play_game(progression_condition, GAME_INSTRUCTIONS["progression"])
+    play_game(brain_progression)
 
 
 if __name__ == '__main__':
