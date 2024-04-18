@@ -2,12 +2,12 @@
 
 
 from brain_games.core import play_game
-from brain_games.games.calc import brain_calc
+from brain_games.games import calc
 
 
 def main():
     print('brain-calc\n')
-    play_game(brain_calc)
+    play_game(calc)
 
 
 if __name__ == '__main__':

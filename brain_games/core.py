@@ -3,12 +3,12 @@ import prompt
 from brain_games.constant import WRONG
 
 
-def play_game(brain_game):
+def play_game(game):
     print(f'{GREETINGS}')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
-    answer, question, instruction = brain_game()
-    print(f'{instruction}')
+    answer, question = game.condition()
+    print(f'{game.RULES}')
     corrects = 0
     while corrects < 3:
         print(f'{question}')

@@ -2,7 +2,7 @@ import random
 from brain_games.constant import GAME_INSTRUCTIONS
 
 
-def calculation():
+def condition():
     a = random.randint(1, 100)
     b = random.randint(1, 100)
     operator_list = ['+', '-', '*']
@@ -18,7 +18,4 @@ def calculation():
     return answer, question
 
 
-def brain_calc():
-    answer, question = calculation()
-    instruction = GAME_INSTRUCTIONS["calc"]
-    return answer, question, instruction
+RULES = GAME_INSTRUCTIONS["calc"]

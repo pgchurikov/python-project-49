@@ -12,9 +12,11 @@ def is_prime(number):
     return True
 
 
-def brain_prime():
+def condition():
     number = random.randint(1, 100)
     question = f'Question: {number}'
     answer = 'yes' if is_prime(number) else 'no'
-    instruction = GAME_INSTRUCTIONS["prime"]
-    return answer, question, instruction
+    return answer, question
+
+
+RULES = GAME_INSTRUCTIONS["prime"]
