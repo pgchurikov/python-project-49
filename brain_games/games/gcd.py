@@ -8,8 +8,8 @@ def gcd(a, b):
 
 
 def condition():
-    a = random_100
-    b = random_100
+    a = random_100()
+    b = random_100()
     question = f'Question: {a} {b}'
     answer = str(gcd(a, b))
     return answer, question
