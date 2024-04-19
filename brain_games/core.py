@@ -7,11 +7,11 @@ def play_game(game):
     print(f'{GREETINGS}')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
-    answer, question = game.condition()
-    print(f'{game.RULES}')
+    print(game.RULES)
     corrects = 0
     while corrects < 3:
-        print(f'{question}')
+        answer, question = game.condition()
+        print(question)
         user_answer = prompt.string('Your answer: ')
         if user_answer == answer:
             print('Correct!')
