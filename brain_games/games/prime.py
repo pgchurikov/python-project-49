@@ -1,6 +1,5 @@
 import random
 import math
-from brain_games.constant import GAME_INSTRUCTIONS
 
 
 def is_prime(number):
@@ -12,11 +11,11 @@ def is_prime(number):
     return True
 
 
-def condition():
+def get_answer_and_question():
     number = random.randint(1, 100)
     question = f'Question: {number}'
     answer = 'yes' if is_prime(number) else 'no'
     return answer, question
 
 
-RULES = GAME_INSTRUCTIONS["prime"]
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'

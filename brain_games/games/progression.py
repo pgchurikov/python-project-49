@@ -1,24 +1,19 @@
-from brain_games.random import random_10, lenght_and_index
-from brain_games.constant import GAME_INSTRUCTIONS
+import random
 
 
-def progression(number, step, lenght):
+def make_progression(initial_term, difference, lenght):
     list = []
     for _ in range(lenght):
-        list.append(number)
-        number += step
+        list.append(initial_term)
+        initial_term += difference
     return list
 
 
-def number_to_hide():
-    number, step = random_10()
-    lenght, index = lenght_and_index()
-    list = progression(number, step, lenght)
-    return index, list
-
-
-def condition():
-    index, list = number_to_hide()
+def get_answer_and_question():
+    initial_term, difference = random.randint(1, 10), random.randint(1, 10)
+    lenght = random.randint(5, 10)
+    index = random.randint(0, lenght - 1)
+    list = make_progression(initial_term, difference, lenght)
     answer = str(list[index])
     list[index] = '..'
     hidden_progression = ' '.join(map(str, list))
@@ -26,4 +21,4 @@ def condition():
     return answer, question
 
 
-RULES = GAME_INSTRUCTIONS["progression"]
+RULES = 'What number is missing in the progression?'

@@ -1,16 +1,15 @@
-from brain_games.random import random_100
-from brain_games.constant import GAME_INSTRUCTIONS
+import random
 
 
 def is_even(number):
     return number % 2 == 0
 
 
-def condition():
-    number = random_100()
+def get_answer_and_question():
+    number = random.randint(1, 100)
     question = f'Question: {number}'
     answer = 'yes' if is_even(number) else 'no'
     return answer, question
 
 
-RULES = GAME_INSTRUCTIONS["even"]
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'

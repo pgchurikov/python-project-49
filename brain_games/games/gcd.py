@@ -1,18 +1,17 @@
-from brain_games.random import random_100
+import random
 import math
-from brain_games.constant import GAME_INSTRUCTIONS
 
 
 def gcd(a, b):
     return math.gcd(a, b)
 
 
-def condition():
-    a = random_100()
-    b = random_100()
+def get_answer_and_question():
+    a = random.randint(1, 100)
+    b = random.randint(1, 100)
     question = f'Question: {a} {b}'
     answer = str(gcd(a, b))
     return answer, question
 
 
-RULES = GAME_INSTRUCTIONS["gcd"]
+RULES = 'Find the greatest common divisor of given numbers.'

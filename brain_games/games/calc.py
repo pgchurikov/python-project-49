@@ -1,8 +1,7 @@
 import random
-from brain_games.constant import GAME_INSTRUCTIONS
 
 
-def condition():
+def get_answer_and_question():
     a = random.randint(1, 100)
     b = random.randint(1, 100)
     operator_list = ['+', '-', '*']
@@ -18,4 +17,4 @@ def condition():
     return answer, question
 
 
-RULES = GAME_INSTRUCTIONS["calc"]
+RULES = 'What is the result of the expression?'
